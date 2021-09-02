@@ -7,7 +7,7 @@
     <title>Document</title>
     <script>
         const array = [
-  ['263-911-492-212-276', 'GF'],
+  ['263-911-492-212-276', 'GF'],    
   ['828-254-875-793-142', 'KI'],
   ['729-880-604-625-583', 'GJ'],
   ['309-751-375-126-130', 'ML'],
@@ -59,8 +59,17 @@
     </script>
 </head>
 <body>
+    <div id="test"></div>
     <script>
+        // array.sort();
+        let text = "";
+        array.forEach(myFunction)
+        document.getElementById("test").innerHTML = text;
         
+        function myFunction(item, index) {
+            text += index + ": [" + item + "]<br>"; 
+        }
     </script>
+    
 </body>
 </html>
