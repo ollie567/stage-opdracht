@@ -59,15 +59,26 @@
     </script>
 </head>
 <body>
+    <div id="uitkomst"></div>
+    <div style="height: 100px"></div>
     <div id="test"></div>
     <script>
+        
         // array.sort();
         let text = "";
         array.forEach(myFunction)
-        document.getElementById("test").innerHTML = text;
+        document.getElementById("uitkomst").innerHTML = text;
+
+        document.getElementById("test").innerHTML = element;
         
         function myFunction(item, index) {
             text += index + ": [" + item + "]<br>"; 
+        }
+        function test() {
+        for (let index = 0; index < array.length; index++) {
+            let element = array[0][index];
+                       
+        }
         }
     </script>
     
