@@ -65,10 +65,10 @@
     <div id="test"></div>
     <script>
         let text = "";
-        array[0][0].reversestring
-        // array.sort();
         
-        // array.sort(function(a, b){return 958-105},{numeric: true});
+        array.sort();
+        array.reverse();
+        // array.sort(,{numeric: true});
         
         array.forEach(myFunction)
         document.getElementById("uitkomst").innerHTML = text;
@@ -76,15 +76,32 @@
         document.getElementById("test").innerHTML = element;
         
         function myFunction(item, index) {
-            item[index][0].reversestring();
             text += index + ": [" + item + "]<br>"; 
         }
-        function test() {
-        for (let index = 0; index < array.length; index++) {
-            let element = array[0][index];
-                       
-        }
-        }
+        
+        // function reverseString(str) {
+        //     return str.split("").reverse().join("");
+        // }
+
+        // function reverseInsertionSort(arr) { 
+
+        //     for(var i = arr.length-2; i>=0; i--) {
+
+        //     var value = arr[i];
+        //     var j;
+
+        //     for(j = i; ((j < arr.length) && (arr[j+1] > value)); j++){ 
+        //     arr[j] = arr[j+1]; 
+        //     } 
+        //         arr[j] = value;
+        //     }
+        //         return arr;
+        //     }
+
+//test
+// var inputArray = [3,2,4,5,1,10,23];
+// var resultArray = reverseInsertionSort(inputArray);
+// console.log(resultArray); //[23, 10, 5, 4, 3, 2, 1]
     </script>
     
 </body>
