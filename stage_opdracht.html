@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht</title>
+    <style>
+        body {
+             display: flex;
+
+        }
+    </style>
     <script>
         const array = [
   ['263-911-492-212-276', 'GF'],    
@@ -61,7 +67,7 @@
 </head>
 <body>
     <div id="uitkomst"></div>
-    <div style="height: 100px"></div>
+    <div style="width: 50px"></div>
     <div id="test"></div>
     <script>
         let text = "";
@@ -73,15 +79,23 @@
         array.forEach(myFunction)
         document.getElementById("uitkomst").innerHTML = text;
 
-        document.getElementById("test").innerHTML = element;
+        // document.getElementById("test").innerHTML = reverseString(array[0][0]);
+        document.getElementById("test").innerHTML = reverseString(array[0][0]);
         
         function myFunction(item, index) {
             text += index + ": [" + item + "]<br>"; 
         }
         
-        // function reverseString(str) {
-        //     return str.split("").reverse().join("");
-        // }
+
+        function reverseString(str) {
+            return str.split("-").reverse().join("-");
+        }
+
+        function sorteer(arr) {
+            array.forEach(element => {
+                
+            });
+        }
 
         // function reverseInsertionSort(arr) { 
 
